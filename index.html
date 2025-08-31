@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module"src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"></script>
+  <title>My Portfolio</title>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Theme Toggle -->
+      <div class="box theme">
+        <div class="item" onclick="theme()">
+          <ion-icon id="lightBtn" name="sunny-outline"></ion-icon>
+          <ion-icon id="darkBtn" name="moon-outline" style="display: none;"></ion-icon>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="box nav">
+        <div class="item active">
+          <a href="#about">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <p>About</p>
+          </a>
+          <div class="divider rtl"></div>
+        </div>
+        <div class="item">
+          <a href="#resume">
+            <ion-icon name="file-tray-full-outline"></ion-icon>
+            <p>Resume</p>
+          </a>
+          <div class="divider rtl"></div>
+        </div>
+        <div class="item">
+          <a href="#projects">
+            <ion-icon name="layers-outline"></ion-icon>
+            <p>Projects</p>
+          </a>
+          <div class="divider rtl"></div>
+        </div>
+        <div class="item">
+          <a href="#blogs">
+            <ion-icon name="reader-outline"></ion-icon>
+            <p>Blogs</p>
+          </a>
+          <div class="divider rtl"></div>
+        </div>
+        <div class="item">
+          <a href="#contact">
+            <ion-icon name="paper-plane-outline"></ion-icon>
+            <p>Contact</p>
+          </a>
+          <div class="divider rtl"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="box profile">
+      <img class="header" src="img/cover.jpg" alt="Cover" />
+      <img class="img" src="img/profile.png" alt="Profile Picture" />
+      <h2>Copy Right This Website Developed By Karim Kaddachi</h2>
+      <p id="typed" class="colored">Full-Stack Web Developer</p>
+
+
+      <ul>
+        <li><a href="https://github.com/"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com//"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://discord.com/users/"><ion-icon name="logo-discord"></ion-icon></a></li>
+        <li><a href="https://www.youtube.com/@"><ion-icon name="logo-youtube"></ion-icon></a></li>
+      </ul>
+
+      <div class="footer">
+        <div class="divider rtl"></div>
+        <table>
+          <tr>
+            <td><a href="#">My Resume <ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+            <td><a href="#">Contact Me <ion-icon name="call-outline"></ion-icon></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+
+    <div class="box content">
+      <div class="wrapper">
+      <h2 id="about"> Hey <span class="colored">there!</span> 👋</h2>
+      <div class="divider ltr"></div>
+      <p>I'm thrilled to tell you a bit about myself. I have over six years of IT experience, specializing in <span class="colored">PHP, Database Development, and open-source frameworks.</span> I thrive in dynamic teams and take pride in contributing to a company's success. If you're in need of a motivated team player, let's connect!</p>
+      
+      <!-- Achivements -->
+
+      <section class="achivements">
+        <div>
+          <h3><ion-icon name="layers-outline"></ion-icon>2K</h3>
+          <p>Website Designed</p>
+        </div>
+        <div>
+          <h3><ion-icon name="briefcase-outline"></ion-icon>5+</h3>
+          <p>Years of Exprience</p>
+        </div>
+        <div>
+          <h3><ion-icon name="rocket-outline"></ion-icon>4K</h3>
+          <p>Completed Projects</p>
+        </div>
+      </section>
+
+        <!-- Skills -->
+
+        <h2>My <span class="colored">Skills</span></h2>
+        <div class="divider ltr"></div>
+        <section class="skills">
+          <div><ion-icon name="logo-html5"></ion-icon><p>HTML</p></div>
+          <div><ion-icon name="logo-css3"></ion-icon><p>CSS</p></div>
+          <div><ion-icon name="logo-nodejs"></ion-icon><p>JS</p></div>
+          <div><ion-icon name="logo-python"></ion-icon><p>Python</p></div>
+          <div>
+            <div class="circle" style="--percent:65%">
+              <h4>65<small>%</small></h4>
+            </div>
+            <p>Discord Bots</p>
+          </div>
+          <div>
+            <div class="circle" style="--percent:50%">
+              <h4>85<small>%</small></h4>
+            </div>
+            <p>MySQL</p>
+          </div>
+          <div>
+            <div class="progress-bar">
+              <p>Node Js <span>90%</span></p>
+              <progress max="100" value="90"></progress>
+            </div>
+            <div class="progress-bar">
+              <p>PostgresSQL <span>75%</span></p>
+              <progress max="100" value="75"></progress>
+            </div>
+          </div>
+        </section>
+
+              <h1 id="resume" >My <span class="colored">Experience</span></h1>
+              <div class="divider ltr"></div>
+
+              <section class="experience">
+                <div class="experience">
+                  <h2>Senior Python Developer</h2>
+                  <h4>Google Inc. <span class="date">Oct, 2018</span> &#x26AC; <span class="date">Dec, 2020</span></h4>
+                  <p>..................................................................................................</p>
+                </div>
+                <div class="experience">
+                  <h2>Database Developer</h2>
+                  <h4>Freshowroks Inc. <span class="date">Oct, 2012</span> &#x26AC; <span class="date">Dec, 2018</span></h4>
+                  <p>..................................................................................................</p>
+                </div>
+                <div class="experience">
+                  <h2>Full Stack Web Developer</h2>
+                  <h4>Integrity Software, Inc. <span class="date">Oct, 2010</span> &#x26AC; <span class="date">Dec, 2014</span></h4>
+                  <p>..................................................................................................</p>
+                </div>
+              </section>
+
+              <h2>My <span class="colored">Contributions</span></h2>
+              <div class="divider ltr"></div>
+
+              <section class="contributions">
+                <div class="wrapper">
+                  <activity-graph
+	                      range-start="2021-01-01"
+	                      range-end="2021-12-31"
+                        activity-levels="0,1,2,3,5"
+	                      activity-data="
+                        2021-01-01,
+                        2021-01-01,
+                        2021-01-01,
+                        2021-01-01,
+                        2021-01-01,
+                        2021-01-02,
+                        2021-01-02,
+                        2021-01-02,
+                        2021-01-02,
+                        2021-01-02,
+                        2021-01-03,
+                        2021-01-03,
+                        2021-01-03,
+                        2021-01-04,
+                        2021-01-04,
+                        2021-01-04,
+                        2021-01-05,
+                        2021-01-05,
+                        2021-01-06,
+                        2021-01-06,
+                        2021-01-06,
+                        2021-01-06,
+                        2021-01-06,
+                        2021-01-07,
+                        2021-01-07,
+                        2021-01-08,
+                        2021-01-08,
+                        2021-01-08,
+                        2021-01-09,
+                        2021-01-11,
+                        2021-01-11,
+                        2021-01-11,
+                        2021-01-11,
+                        2021-01-11,
+                        2021-01-12,
+                        2021-01-12,
+                        2021-01-12,
+                        2021-01-12,
+                        2021-01-15,
+                        2021-01-15,
+                        2021-01-16,
+                        2021-01-16,
+                        2021-01-16,
+                        2021-01-18,
+                        2021-01-18,
+                        2021-01-18,
+                        2021-01-18,
+                        2021-01-21,
+                        2021-01-21,
+                        2021-01-21,
+                        2021-01-21,
+                        2021-01-22,
+                        2021-01-22,
+                        2021-01-23,
+                        2021-01-23,
+                        2021-01-24,
+                        2021-01-24,
+                        2021-01-24,
+                        2021-01-24,
+                        2021-01-27,
+                        2021-01-27,
+                        2021-01-27,
+                        2021-01-27,
+                        2021-01-28,
+                        2021-01-28,
+                        2021-01-29,
+                        2021-01-29,
+                        2021-01-29,
+                        2021-01-30,
+                        2021-01-30,
+                        2021-01-30,
+                        2021-01-30,
+                        
+
+                        "
+	                      
+                  ></activity-graph>
+                </div>
+              </section>
+
+                  <h2 id="projects">My <span class="colored">Projects</span></h2>
+                  <div class="divider ltr"></div>
+
+                  <section class="projects">
+                    <div class="project-1">
+                      <img src="img/project-1.png" alt="">
+                      <h3>Projects <span class="colored">Title-1</span></h3>
+                    </div>
+                    <div class="project-2">
+                      <img src="img/project-2.png" alt="">
+                      <h3>Projects <span class="colored">Title-2</span></h3>
+                    </div>
+                    <div class="project-3">
+                      <img src="img/project-3.png" alt="">
+                      <h3>Projects <span class="colored">Title-3</span></h3>
+                    </div>
+                    <div class="project-4">
+                      <img src="img/project-4.png" alt="">
+                      <h3>Projects <span class="colored">Title-4</span></h3>
+                    </div>
+                    <div class="project-5">
+                      <img src="img/project-5.png" alt="">
+                      <h3>Projects <span class="colored">Title-5</span></h3>
+                    </div>
+                    <div class="project-6">
+                      <img src="img/project-6.png" alt="">
+                      <h3>Projects <span class="colored">Title-6</span></h3>
+                    </div>
+                    <div class="project-7">
+                      <img src="img/project-7.png" alt="">
+                      <h3>Projects <span class="colored">Title-7</span></h3>
+                    </div>
+                    
+                  </section>
+
+
+                   <!-- Blogs -->
+
+                   <h2 id="blogs" >My <span class="colore">Blogs</span></h2>
+                   <div class="divider ltr"></div>
+
+                   <section class="blogs">
+                    <div class="blog-box">
+                      <img src="img/blog-1.webp" alt="">
+                      <div>
+                        <h3>Web Design Tools</h3>
+                        <p>......................................................................</p>
+                        <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                      </div>
+                    </div>
+                    <div class="blog-box">
+                      <img src="img/blog-2.webp" alt="">
+                      <div>
+                        <h3>How to develop WordPress Plugin</h3>
+                        <p>......................................................................</p>
+                        <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                      </div>
+                    </div>
+                    <div class="blog-box">
+                      <img src="img/blog-3.webp" alt="">
+                      <div>
+                        <h3>what is Bootstrap</h3>
+                        <p>......................................................................</p>
+                        <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                      </div>
+                    </div>
+                    <div class="blog-box">
+                      <img src="img/blog-4.webp" alt="">
+                      <div>
+                        <h3>What is Laravel</h3>
+                        <p>......................................................................</p>
+                        <span class="link"><a href="#">Read More</a><ion-icon name="caret-forward-outline"></ion-icon></span>
+                      </div>
+                    </div>
+                   </section>
+
+
+                   <br><h2>My <pan class="colore">Testimonials</pan></h1>
+                   <div class="divider ltr"></div>
+
+                   <section class="testimonials">
+                    <div class="testimonial-box">
+                          <img src="img/testimonial-1.webp" alt="">
+                          <span>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+
+                          </span>
+                          <h3>Dan Gromes</h3> <i>Manager at Google Inc.</i>
+                          <p>..........................................................................</p>
+                    
+                    <img src="img/testimonial-2.webp" alt="">
+                          <span>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+
+                          </span>
+                          <h3>Dan Gromes</h3> <i>Manager at Google Inc.</i>
+                          <p>..........................................................................</p>
+                        
+                        <img src="img/testimonial-3.webp" alt="">
+                          <span>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+
+                          </span>
+                          <h3>Dan Gromes</h3> <i>Manager at Google Inc.</i>
+                          <p>..........................................................................</p>
+                    </div>
+                    <div class="testimonaials-box">
+
+                    </div>
+                    <div class="testimonaials-box">
+
+                    </div>
+                    <div class="testimonaials-box">
+
+                    </div>
+
+                   </section>
+
+                   <!-- Contact -->
+                          <h2 id="contact">Contact <span class="color">Me</span></h2>
+                          <div class="divider ltr"></div>
+                                          
+                          <section>
+                            <iframe class="map" width="100%" height="300" frameborder="0"
+                              src="https://www.google.com/maps/embed?pb=">
+                            </iframe>
+                          
+                            <form id="contactForm" class="contact">
+                              <div>
+                                <input type="text" class="input" name="firstname" placeholder="Your Name..." required>
+                              </div>
+                              <div>
+                                <input type="text" class="input" name="lastname" placeholder="Your Last Name..." required>
+                              </div>
+                              <div>
+                                <input type="email" class="input" name="email" placeholder="Your Email Address..." required>
+                              </div>
+                              <div class="full">
+                                <textarea class="input" rows="4" name="message" placeholder="Write Something..." required></textarea>
+                              </div>
+                              <div class="full">
+                                <button type="submit" class="submit">SEND</button>
+                                <div id="formAlert" style="margin-top:10px;font-size:.9rem;"></div>
+                              </div>
+                            </form>
+                          </section>
+
+              </div>
+            </div> 
+          </div>
+
+  <!-- Script -->
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
